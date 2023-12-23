@@ -9,6 +9,7 @@ global with sharing class WebhookSubDemo {
             response.responseBody = Blob.valueOf('{"Success"}');
         } catch (Exception e) {
             System.debug('Exception Happened' + e.getMessage());
+            //
         }
     }
 }
