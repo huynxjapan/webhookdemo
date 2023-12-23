@@ -5,6 +5,8 @@ global with sharing class WebhookSubDemo {
         try {
             RestRequest request = RestContext.request;
             RestResponse response = RestContext.response;
+            response.statusCode = 200;
+            response.responseBody = Blob.valueOf('{"Success"}');
         } catch (Exception e) {
             System.debug('Exception Happened' + e.getMessage());
         }
